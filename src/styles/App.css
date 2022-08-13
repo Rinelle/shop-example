@@ -1,0 +1,159 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 80px;
+    background-color: cadetblue;
+    color: white;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .cart {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.header .cart .counter {
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: -4px;
+    right: -7px;
+    width: 20px;
+    height: 20px;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 0 12px rgb(0 0 0 / 24%);
+}
+
+.header .cart svg {
+    width: 26px;
+}
+
+.header .cart path {
+    fill: black;
+}
+
+.content {
+    flex-grow: 1;
+    margin-bottom: 60px;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+}
+
+.logo {
+    font-family: monospace;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+h1 {
+    margin: 30px 0;
+}
+
+.content .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.card {
+    box-shadow: 0 0 12px rgba(0,0,0, .2);
+}
+
+.card-image {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card img {
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+}
+
+.card-content {
+    margin: 20px;
+}
+
+.card-title {
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    border: none;
+    background-color: orange;
+    padding: 8px 26px;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    box-shadow: 2px 2px 7px rgb(0 0 0 / 10%);
+    cursor: pointer;
+}
+
+.calc {
+    display: flex;
+    align-items: center;
+}
+
+.plus, .minus {
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: border-color .2s ease, color .2s ease;
+}
+
+.plus:hover, .minus:hover {
+    color: orange;
+    border-color: orange;
+}
+
+.calc-result {
+    margin: 0 6px;
+    width: 20px;
+    text-align: center;
+}
